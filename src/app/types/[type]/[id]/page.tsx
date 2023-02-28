@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-async function getRecipeDetails(id) {
+async function getRecipeDetails(id:number) {
   // await new Promise((r) => setTimeout(r, 5000));
   const res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
