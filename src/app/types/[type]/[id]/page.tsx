@@ -18,8 +18,8 @@ export default async function Page({ params }:any) {
     .filter(Boolean);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center">
-      <div className="p-5">
+    <div className="flex flex-col md:flex-row justify-between items-center max-w-[1300px] mx-auto">
+      <div className="p-5 md:w-2/5">
         <Image
           alt="Recipe"
           width={500}
@@ -28,7 +28,7 @@ export default async function Page({ params }:any) {
           className="rounded-lg"
         />
       </div>
-      <div className="p-5">
+      <div className="md:w-3/5 p-5 md:h-[500px]">
         <h1 className="text-center md:text-left pb-5 md:pb-0">
           Nombre de la Receta:{" "}
           <span className="font-bold text-md">{details.strMeal}</span>
