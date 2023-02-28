@@ -1,4 +1,7 @@
-import './globals.css'
+import '../styles/globals.css'
+import Header from './components/Header'
+import Image from "next/image";
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +14,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="es">
+      <head />
+      <body> 
+        <Header /> 
+        {children}
+        </body>
     </html>
   )
 }
